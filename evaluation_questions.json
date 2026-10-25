@@ -1,0 +1,856 @@
+[
+ {
+  "id": 1,
+  "category": "Overseas licence",
+  "question": "I just moved to Melbourne for uni with my Singapore licence. How long can I keep driving on it?",
+  "gold": [
+   "(six|6) months"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(six|6) months"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 2,
+  "category": "Overseas licence",
+  "question": "Do I need to sit a driving test to convert my UK licence?",
+  "gold": [
+   "United Kingdom",
+   "code: FULL"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(not|no) .{0,40}test|recognised|do not need"
+  ],
+  "answer_must_not": [
+   "must (sit|do|pass) .{0,20}Drive Test"
+  ],
+  "decline": false
+ },
+ {
+  "id": 3,
+  "category": "Overseas licence",
+  "question": "I have an Indian driving licence. Do I have to do tests to get a Victorian licence?",
+  "gold": [
+   "India - licence recognition code: NON",
+   "Hazard Perception Test"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(Drive Test|driving test)",
+   "(Learner|Hazard)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 4,
+  "category": "Overseas licence",
+  "question": "I'm 30 and have a South Korean licence. Did the rules change in 2025?",
+  "gold": [
+   "Korea",
+   "25 or older"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(2025|1 May)",
+   "(test|Test)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 5,
+  "category": "Overseas licence",
+  "question": "My licence is in Chinese. Can I just use it or do I need a translation?",
+  "gold": [
+   "NAATI|translat"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "translat"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 6,
+  "category": "Overseas licence",
+  "question": "Can I use an International Driving Permit instead of translating my licence?",
+  "gold": [
+   "International Driving Permit"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(International Driving Permit|IDP)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 7,
+  "category": "Overseas licence",
+  "question": "I'm from Japan. Is my licence recognised in Victoria?",
+  "gold": [
+   "Japan - licence recognition code: FULL"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(recogni[sz]ed|do not need|no test|without)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 8,
+  "category": "Overseas licence",
+  "question": "Can I ride a motorcycle in Victoria on my overseas motorcycle licence?",
+  "gold": [
+   "overseas motorcycle licence"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(motorcycle)",
+   "(six months|convert)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 9,
+  "category": "Overseas licence",
+  "question": "Does the six month limit start when I land in Australia or when I start living in Victoria?",
+  "gold": [
+   "first began living in Victoria"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(living in Victoria|began living|started living)"
+  ],
+  "answer_must_not": [
+   "from (the day|when) you (land|arrive)"
+  ],
+  "decline": false
+ },
+ {
+  "id": 10,
+  "category": "Overseas licence",
+  "question": "I have a licence from the Philippines. What tests would I need?",
+  "gold": [
+   "Philippines",
+   "Hazard Perception Test"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(Learner Permit Test)",
+   "(Hazard Perception Test)",
+   "(Drive Test)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 11,
+  "category": "Overseas licence",
+  "question": "I'm 27. How long must I hold a learner permit before the probationary test?",
+  "gold": [
+   "learner permit",
+   "3 months",
+   "\\b25\\b",
+   "(held|hold)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "3 months"
+  ],
+  "answer_must": [
+   "3 months"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 12,
+  "category": "Overseas licence",
+  "question": "Which languages can I sit the learner test in?",
+  "gold": [
+   "Arabic",
+   "Vietnamese",
+   "Learner Permit Test"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(Arabic|Vietnamese|Turkish)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 13,
+  "category": "Licence-type defaults",
+  "question": "Can I have one drink and still drive on my overseas licence?",
+  "gold": [
+   "assume",
+   "(0\\.00|zero)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(zero|0\\.00|not drink|no alcohol)"
+  ],
+  "answer_must_not": [
+   "(yes|you can|it is (fine|ok)|okay).{0,30}one drink"
+  ],
+  "decline": false
+ },
+ {
+  "id": 14,
+  "category": "Licence-type defaults",
+  "question": "What's the blood alcohol limit for a normal full licence?",
+  "gold": [
+   "Below 0\\.05"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "\\.05"
+  ],
+  "answer_must": [
+   "0\\.05"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 15,
+  "category": "Licence-type defaults",
+  "question": "Is it okay to use Google Maps on my phone while driving?",
+  "gold": [
+   "mounted"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "mounted"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 16,
+  "category": "Licence-type defaults",
+  "question": "I'm on P plates. Can I touch my phone when I'm stopped at the lights?",
+  "gold": [
+   "(not|Do not) touch or use (any|a) phone"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(not|no|cannot|can't|must not)"
+  ],
+  "answer_must_not": [
+   "(yes|you can) .{0,20}touch"
+  ],
+  "decline": false
+ },
+ {
+  "id": 17,
+  "category": "Licence-type defaults",
+  "question": "What is the alcohol limit if I drive a bus or taxi?",
+  "gold": [
+   "buses",
+   "0\\.00"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(0\\.00|zero)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 18,
+  "category": "Signs",
+  "question": "There's a traffic light with a white T on it. Does that mean I can go?",
+  "gold": [
+   "white T",
+   "(does not apply|not apply)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "white T|T or\\s+B"
+  ],
+  "answer_must": [
+   "(tram)",
+   "(not|no|don't|do not|wait)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 19,
+  "category": "Signs",
+  "question": "What is a hook turn and how do I do it?",
+  "gold": [
+   "far-left lane",
+   "hook turn"
+  ],
+  "alt_gold": [
+   [
+    "hook turn",
+    "(left lane|as near as possible to the left)",
+    "green"
+   ]
+  ],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "hook turn"
+  ],
+  "answer_must": [
+   "(far.left|left lane)",
+   "green"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 20,
+  "category": "Signs",
+  "question": "What do I do at a stop sign?",
+  "gold": [
+   "(complete stop|stop completely)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "complete stop"
+  ],
+  "answer_must": [
+   "stop"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 21,
+  "category": "Signs",
+  "question": "What does a red X above my lane mean?",
+  "gold": [
+   "red cross",
+   "must not drive"
+  ],
+  "alt_gold": [
+   [
+    "Red cross",
+    "Do not drive"
+   ]
+  ],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "red cross"
+  ],
+  "answer_must": [
+   "(not|do not|don't).{0,25}(drive|enter|use)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 22,
+  "category": "Signs",
+  "question": "What does 'keep left unless overtaking' mean?",
+  "gold": [
+   "right lane",
+   "overtaking"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "must not drive in the right.{0,80}lane unless overtaking"
+  ],
+  "answer_must": [
+   "(right lane|overtak)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 23,
+  "category": "Signs",
+  "question": "How fast can I go past a school in the morning?",
+  "gold": [
+   "40 km/h",
+   "school"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "40 km/h"
+  ],
+  "answer_must": [
+   "40"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 24,
+  "category": "Signs",
+  "question": "Can I stop for a minute in a no parking zone to drop my friend off?",
+  "gold": [
+   "two minutes",
+   "(three metres|3 metres)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "two minutes"
+  ],
+  "answer_must": [
+   "(two minutes|2 minutes)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 25,
+  "category": "Signs",
+  "question": "What do yellow diamond signs mean?",
+  "gold": [
+   "yellow diamond",
+   "slow"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "yellow diamond"
+  ],
+  "answer_must": [
+   "(warn|danger|hazard|ahead)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 26,
+  "category": "Give way",
+  "question": "Who has right of way at a roundabout?",
+  "gold": [
+   "already in the roundabout"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "already in the roundabout"
+  ],
+  "answer_must": [
+   "already (in|on)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 27,
+  "category": "Give way",
+  "question": "At a T-intersection, who gives way, the side road or the main road?",
+  "gold": [
+   "road that ends",
+   "continuing road"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "road that ends"
+  ],
+  "answer_must": [
+   "(road that ends|side road)",
+   "(continuing|main)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 28,
+  "category": "Give way",
+  "question": "There are no signs at a crossroads. Who goes first?",
+  "gold": [
+   "on your right",
+   "give way"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "on your right"
+  ],
+  "answer_must": [
+   "right"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 29,
+  "category": "Give way",
+  "question": "I'm turning right at an intersection with no lights. Who do I give way to?",
+  "gold": [
+   "oncoming",
+   "turning right"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "oncoming"
+  ],
+  "answer_must": [
+   "oncoming"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 30,
+  "category": "Give way",
+  "question": "What is zip merging?",
+  "gold": [
+   "zip merging",
+   "ahead"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "zip merging"
+  ],
+  "answer_must": [
+   "(merge|one lane)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 31,
+  "category": "Give way",
+  "question": "What should I do if the traffic lights are not working?",
+  "gold": [
+   "not working",
+   "give way"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "(give way|uncontrolled|no (traffic )?lights)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 32,
+  "category": "Trams",
+  "question": "A tram has stopped and people are getting off. Can I drive past?",
+  "gold": [
+   "10 km/h",
+   "doors"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "10\\s?km/h"
+  ],
+  "answer_must": [
+   "(doors|stop)",
+   "(10 km/h)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 33,
+  "category": "Trams",
+  "question": "Can I drive in a tram lane?",
+  "gold": [
+   "tram lane",
+   "50 metres"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "50 metres"
+  ],
+  "answer_must": [
+   "(not|only|except)",
+   "(50 metres)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 34,
+  "category": "Trams",
+  "question": "What is a safety zone at a tram stop?",
+  "gold": [
+   "safety zone",
+   "tram stop"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "safety zone"
+  ],
+  "answer_must": [
+   "(tram stop|island|dividing strip)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 35,
+  "category": "Fines and points",
+  "question": "How much is the fine for speeding 15 km/h over the limit?",
+  "gold": [
+   "10 to 24 km/h",
+   "\\$418"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "418"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 36,
+  "category": "Fines and points",
+  "question": "What's the fine for using my phone while driving?",
+  "gold": [
+   "\\$627",
+   "(phone|portable device)"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "627"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 37,
+  "category": "Fines and points",
+  "question": "How many demerit points can a P-plate driver get in a year?",
+  "gold": [
+   "No more than 4"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [],
+  "answer_must": [
+   "\\b4\\b"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 38,
+  "category": "Parking",
+  "question": "What does 1P mean on a parking sign?",
+  "gold": [
+   "1P",
+   "one hour"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "1P"
+  ],
+  "answer_must": [
+   "(one hour|1 hour)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 39,
+  "category": "Parking",
+  "question": "What does the letter C on a street sign mean?",
+  "gold": [
+   "letter C",
+   "clearway"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "letter .C. means"
+  ],
+  "answer_must": [
+   "clearway"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 40,
+  "category": "Parking",
+  "question": "How close to a bus stop can I park?",
+  "gold": [
+   "20 metres",
+   "bus stop"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "within 20 metres"
+  ],
+  "answer_must": [
+   "20 metres"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 41,
+  "category": "Other road rules",
+  "question": "I missed my freeway exit. Can I reverse?",
+  "gold": [
+   "Do not reverse"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "Do not reverse on a freeway"
+  ],
+  "answer_must": [
+   "(not|never|don't).{0,20}reverse"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 42,
+  "category": "Other road rules",
+  "question": "What should I do at a railway crossing with flashing lights?",
+  "gold": [
+   "stopped flashing"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": true,
+  "handbook_check": [
+   "flashing lights"
+  ],
+  "answer_must": [
+   "(not cross|wait|stop)"
+  ],
+  "answer_must_not": [],
+  "decline": false
+ },
+ {
+  "id": 43,
+  "category": "Out of scope",
+  "question": "What should I do if a kangaroo jumps out in front of my car?",
+  "gold": [
+   "kangaroos"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": false,
+  "handbook_check": [],
+  "answer_must": [
+   "(don't have|do not have|not (in|covered)|check the official)"
+  ],
+  "answer_must_not": [],
+  "decline": true
+ },
+ {
+  "id": 44,
+  "category": "Out of scope",
+  "question": "How much does it cost to use the CityLink toll road?",
+  "gold": [
+   "toll road charges"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": false,
+  "handbook_check": [],
+  "answer_must": [
+   "(don't have|do not have|not (in|covered)|check the official)"
+  ],
+  "answer_must_not": [],
+  "decline": true
+ },
+ {
+  "id": 45,
+  "category": "Out of scope",
+  "question": "How much does it cost to register a car in Victoria?",
+  "gold": [
+   "vehicle registration details"
+  ],
+  "alt_gold": [],
+  "retrieval_eval": false,
+  "handbook_check": [],
+  "answer_must": [
+   "(don't have|do not have|not (in|covered)|check the official)"
+  ],
+  "answer_must_not": [],
+  "decline": true
+ },
+ {
+  "id": 46,
+  "category": "Out of scope",
+  "question": "What are the road rules in New South Wales?",
+  "gold": [],
+  "alt_gold": [],
+  "retrieval_eval": false,
+  "handbook_check": [],
+  "answer_must": [
+   "(don't have|do not have|not (in|covered)|Victoria|check the official)"
+  ],
+  "answer_must_not": [],
+  "decline": true
+ },
+ {
+  "id": 47,
+  "category": "Out of scope",
+  "question": "Does my car insurance cover me as an international student?",
+  "gold": [],
+  "alt_gold": [],
+  "retrieval_eval": false,
+  "handbook_check": [],
+  "answer_must": [
+   "(don't have|do not have|not (in|covered)|check the official)"
+  ],
+  "answer_must_not": [],
+  "decline": true
+ }
+]
